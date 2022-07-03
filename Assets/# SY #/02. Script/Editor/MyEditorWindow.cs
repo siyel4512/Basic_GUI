@@ -64,4 +64,18 @@ public class MyEditorWindow : EditorWindow
     }
     #endregion
 
+    #region GUI 그리기
+
+    // GUI를 그리기 위해서 EditorWindow에서 재공하는 예약된 OnGUI()를 선언해야함 유니티에서 호출해줌
+    private void OnGUI()
+    {
+        // EditorGUILayout은 값을 설정하기 위한 필드들이 모여있는 클래스이다.
+        EditorGUILayout.LabelField("Label!!!");
+        EditorGUILayout.TextField("TextField!!!");
+
+        // GUILayout은 대부분 Layout없이 직접 Rect를 지정하여 그리는 필드들이 모여있는 클래스이다.
+        GUILayout.Button("Button!!!");
+    }
+
+    #endregion
 }
