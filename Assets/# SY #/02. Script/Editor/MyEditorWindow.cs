@@ -104,96 +104,96 @@ public class MyEditorWindow : EditorWindow
 
     #region GUI 그리기3 (사용이 빈번한 GUI 요소 그룹 사용해보기
 
-    //int intValue;
-    //float floatValue;
-    //Color colorValue;
-    //Gradient gradientValue = new Gradient();
-    //Vector3 vector3Value;
-    //Vector3Int vector3IntValue;
-    //Rect rectValue;
-    //UnityEngine.Object objectValue;
-    //string passwordValue;
-    //string tagValue;
-    //UnityEngine.ParticleSystemCollisionType enumValue;
-    //bool toggleValue;
-    //string[] stringArr = new string[] { "String01", "String02", "String03", "String04", "String05", "String06"};
-    //int selectionValue;
+    int intValue;
+    float floatValue;
+    Color colorValue;
+    Gradient gradientValue = new Gradient();
+    Vector3 vector3Value;
+    Vector3Int vector3IntValue;
+    Rect rectValue;
+    UnityEngine.Object objectValue;
+    string passwordValue;
+    string tagValue;
+    UnityEngine.ParticleSystemCollisionType enumValue;
+    bool toggleValue;
+    string[] stringArr = new string[] { "String01", "String02", "String03", "String04", "String05", "String06" };
+    int selectionValue;
 
-    //private void OnGUI()
-    //{
-    //    #region ===:: EditorGUILayout:: ===
-    //    // https://blog.naver.com/PostView.naver?blogId=hammerimpact&logNo=220772494827&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
+    private void OnGUI()
+    {
+        #region ===:: EditorGUILayout:: ===
+        // https://blog.naver.com/PostView.naver?blogId=hammerimpact&logNo=220772494827&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
 
-    //    // int field
-    //    intValue = EditorGUILayout.IntField("int 값", intValue);
+        // int field
+        intValue = EditorGUILayout.IntField("int 값", intValue);
 
-    //    // float field
-    //    floatValue = EditorGUILayout.FloatField("float 값", floatValue);
+        // float field
+        floatValue = EditorGUILayout.FloatField("float 값", floatValue);
 
-    //    // color field
-    //    colorValue = EditorGUILayout.ColorField("color 값", colorValue);
+        // color field
+        colorValue = EditorGUILayout.ColorField("color 값", colorValue);
 
-    //    // gradient field
-    //    gradientValue = EditorGUILayout.GradientField("gradient 값", gradientValue);
+        // gradient field
+        gradientValue = EditorGUILayout.GradientField("gradient 값", gradientValue);
 
-    //    // vector3 field
-    //    vector3Value = EditorGUILayout.Vector3Field("vector3 값", vector3Value);
+        // vector3 field
+        vector3Value = EditorGUILayout.Vector3Field("vector3 값", vector3Value);
 
-    //    // vector3Int field
-    //    vector3IntValue = EditorGUILayout.Vector3IntField("vector3Int 값", vector3IntValue);
+        // vector3Int field
+        vector3IntValue = EditorGUILayout.Vector3IntField("vector3Int 값", vector3IntValue);
 
-    //    //rect field
-    //    rectValue = EditorGUILayout.RectField("rect 값", rectValue);
+        //rect field
+        rectValue = EditorGUILayout.RectField("rect 값", rectValue);
 
-    //    // object field
-    //    objectValue = EditorGUILayout.ObjectField("obect 값", objectValue, typeof(UnityEngine.Object), false);
+        // object field
+        objectValue = EditorGUILayout.ObjectField("obect 값", objectValue, typeof(UnityEngine.Object), false);
 
-    //    // password field
-    //    passwordValue = EditorGUILayout.PasswordField("password 값", passwordValue);
+        // password field
+        passwordValue = EditorGUILayout.PasswordField("password 값", passwordValue);
 
-    //    // tag 값
-    //    tagValue = EditorGUILayout.TagField("tag 값", tagValue);
+        // tag 값
+        tagValue = EditorGUILayout.TagField("tag 값", tagValue);
 
-    //    EditorGUILayout.Space(15);
+        EditorGUILayout.Space(15);
 
-    //    // enum type field
-    //    enumValue = (UnityEngine.ParticleSystemCollisionType)EditorGUILayout.EnumFlagsField("enum 값", enumValue);
+        // enum type field
+        enumValue = (UnityEngine.ParticleSystemCollisionType)EditorGUILayout.EnumFlagsField("enum 값", enumValue);
 
-    //    // slider
-    //    floatValue = EditorGUILayout.Slider("slider", floatValue, 0, 100);
+        // slider
+        floatValue = EditorGUILayout.Slider("slider", floatValue, 0, 100);
 
-    //    // help box
-    //    EditorGUILayout.HelpBox("Help box", MessageType.Error);
+        // help box
+        EditorGUILayout.HelpBox("Help box", MessageType.Error);
 
-    //    // toggle
-    //    toggleValue = EditorGUILayout.Toggle("toggle 값", toggleValue);
+        // toggle
+        toggleValue = EditorGUILayout.Toggle("toggle 값", toggleValue);
 
-    //    // 줄 긋기
-    //    EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+        // 줄 긋기
+        EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
 
-    //    #endregion
+        #endregion
 
 
-    //    #region ===:: GUILayout ::===
+        #region ===:: GUILayout ::===
 
-    //    // toolbar
-    //    // https://lunchballer.com/archives/561
-    //    selectionValue = GUILayout.Toolbar(selectionValue, stringArr);
+        // toolbar
+        // https://lunchballer.com/archives/561
+        selectionValue = GUILayout.Toolbar(selectionValue, stringArr);
 
-    //    GUILayout.Space(15);
+        GUILayout.Space(15);
 
-    //    // selection grid
-    //    selectionValue = GUILayout.SelectionGrid(selectionValue, stringArr, 2);
+        // selection grid
+        selectionValue = GUILayout.SelectionGrid(selectionValue, stringArr, 2);
 
-    //    // box (e.g. texture)
-    //    // https://github.com/halak/unity-editor-icons
-    //    GUILayout.Box(EditorGUIUtility.IconContent("Animation.Record"));
-    //    GUILayout.Box(EditorGUIUtility.IconContent("animationvisibilitytoggleon"));
-    //    GUILayout.Box(EditorGUIUtility.IconContent("animationvisibilitytoggleon@2x"));
+        // box (e.g. texture)
+        // https://github.com/halak/unity-editor-icons
+        GUILayout.Box(EditorGUIUtility.IconContent("Animation.Record"));
+        GUILayout.Box(EditorGUIUtility.IconContent("animationvisibilitytoggleon"));
+        GUILayout.Box(EditorGUIUtility.IconContent("animationvisibilitytoggleon@2x"));
 
-    //    #endregion
+        #endregion
 
-    //}
+    }
 
     #endregion
 
@@ -426,52 +426,52 @@ public class MyEditorWindow : EditorWindow
 
     #region GUI 그리기7 (다중 영역 나누기)
 
-    Vector3 scrollPos_01;
-    Vector3 scrollPos_02;
+    //Vector3 scrollPos_01;
+    //Vector3 scrollPos_02;
 
-    private void OnGUI()
-    {
-        #region ===:: Scope ::===
-        {
-            #region ===:: Horizontal ::===
+    //private void OnGUI()
+    //{
+    //    #region ===:: Scope ::===
+    //    {
+    //        #region ===:: Horizontal ::===
 
-            //using (var scope = new EditorGUILayout.HorizontalScope())
-            //{
-            //    // 여기에 생성된 크기가 결국 버튼의 크기가 된다.
-            //    if (GUI.Button(scope.rect, GUIContent.none))
-            //    {
-            //        Debug.Log("clicked");
-            //    }
+    //        //using (var scope = new EditorGUILayout.HorizontalScope())
+    //        //{
+    //        //    // 여기에 생성된 크기가 결국 버튼의 크기가 된다.
+    //        //    if (GUI.Button(scope.rect, GUIContent.none))
+    //        //    {
+    //        //        Debug.Log("clicked");
+    //        //    }
 
-            //    for (int i = 0; i < 5; i++)
-            //    {
-            //        GUILayout.Label("Label!!!");
-            //        GUILayout.Box(EditorGUIUtility.FindTexture("BuildSettings.Editor"));
-            //    }
-            //}
+    //        //    for (int i = 0; i < 5; i++)
+    //        //    {
+    //        //        GUILayout.Label("Label!!!");
+    //        //        GUILayout.Box(EditorGUIUtility.FindTexture("BuildSettings.Editor"));
+    //        //    }
+    //        //}
 
-            #endregion
+    //        #endregion
 
-            #region ===:: Vertical ::===
+    //        #region ===:: Vertical ::===
 
-            using (var scope = new EditorGUILayout.VerticalScope(GUILayout.Width(100)))
-            {
-                if (GUI.Button(scope.rect, GUIContent.none))
-                {
-                    Debug.Log("clicked");
-                }
+    //        using (var scope = new EditorGUILayout.VerticalScope(GUILayout.Width(100)))
+    //        {
+    //            if (GUI.Button(scope.rect, GUIContent.none))
+    //            {
+    //                Debug.Log("clicked");
+    //            }
 
-                for (int i = 0; i < 5; i++)
-                {
-                    GUILayout.Label("Label!!!");
-                    GUILayout.Box(EditorGUIUtility.FindTexture("BuildSettings.Editor"));
-                }
-            }
+    //            for (int i = 0; i < 5; i++)
+    //            {
+    //                GUILayout.Label("Label!!!");
+    //                GUILayout.Box(EditorGUIUtility.FindTexture("BuildSettings.Editor"));
+    //            }
+    //        }
 
-            #endregion
-        }
-        #endregion
-    }
+    //        #endregion
+    //    }
+    //    #endregion
+    //}
 
     #endregion
 }
