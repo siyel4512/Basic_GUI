@@ -14,6 +14,7 @@ public class MyEditorWindow : EditorWindow
     {
         Debug.Log("My Tool 창 열림");
 
+        // window 창 생성
         var window = GetWindow<MyEditorWindow>();
         window.title = "My Tool";
     }
