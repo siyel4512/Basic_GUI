@@ -75,6 +75,11 @@ public class MyEditorWindow : EditorWindow
 
         // GUILayout은 대부분 Layout없이 직접 Rect를 지정하여 그리는 필드들이 모여있는 클래스이다.
         GUILayout.Button("Button!!!");
+
+        //GUI
+        //EditorGUI
+        //GUILayout
+        //EditorGUILayout
     }
 
     #endregion
